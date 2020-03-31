@@ -4,11 +4,12 @@ This is a simple library that helps in programatically detecting when system the
 ## Usage
 On the browser
 ```html
+<!-- Search theme-switch-listener on jsdelivr and replace src string with the one provided by jsdelivr  -->
 <script src=""></script>
 ```
 Or on Vue, React or Angular
 ```js
-import ThemeSwitcher from 'theme-switcher';
+import ThemeSwitcher from 'theme-switcher-listener';
 ```
 Create a `ThemeSwitcher` instance
 ```js
