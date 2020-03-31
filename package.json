@@ -1,8 +1,18 @@
 {
-  "name": "theme-switcher",
+  "name": "theme-switch-listener",
   "version": "0.0.1",
   "description": "Dispatches an event when system theme has been changed",
   "main": "lib/switcher.js",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "dist", "lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/grafitto/theme-switcher/issues",
+    "email": "nderitukelvin19@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/grafitto/theme-switcher.git"
@@ -18,6 +28,7 @@
     "switcher"
   ],
   "author": "Kevin Nderitu <nderitukelvin19@gmail.com>",
+  "homepage": "https://github.com/grafitto/theme-switcher/blob/master/README.md",
   "license": "MIT",
   "dependencies": {
     "ts-loader": "^6.2.2",
