@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <style>
+        main {
+            background-color: red;
+            color: white;
+            text-align: center;
+            height: 990px;
+        }
+        body {
+            margin: 0px
+        }
+    </style>
+</head>
+<body>
+    <main>This is a text</main>
+    <script src="dist/client.min.js"></script>
+    <script>
+        let element = document.querySelector('main')
+        let ts = new Themer.ThemeSwitcher()
+        ts.init()
+
+        window.addEventListener('theme-switched', (payload) => {
+            if(payload.detail.theme === 'light') {
+                element.style.backgroundColor = '#fff'
+                element.style.color = 'black'
+                element.innerHTML = 'Light theme has been detected!'
+            } else {
+                element.style.backgroundColor = '#000'
+                element.style.color = 'white'
+                element.innerHTML = 'Dark theme has been detected!'
+            }
+        })
+    </script>
+</body>
+</html>
