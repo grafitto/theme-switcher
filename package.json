@@ -1,5 +1,5 @@
 {
-  "name": "theme-switcher",
+  "name": "theme-switch-listener",
   "version": "0.0.1",
   "description": "Dispatches an event when system theme has been changed",
   "main": "lib/switcher.js",
