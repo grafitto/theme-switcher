@@ -1,0 +1,29 @@
+{
+  "name": "theme-switcher",
+  "version": "0.0.1",
+  "description": "Dispatches an event when system theme has been changed",
+  "main": "lib/switcher.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafitto/theme-switcher.git"
+  },
+  "scripts": {
+    "test": "npm test",
+    "build": "rm -rf dist lib && npm run build:node && npm run build:umd",
+    "build:umd": "webpack --mode=production",
+    "build:node": "tsc"
+  },
+  "keywords": [
+    "Theme",
+    "switcher"
+  ],
+  "author": "Kevin Nderitu <nderitukelvin19@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
