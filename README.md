@@ -5,7 +5,9 @@ This is a simple library that helps in programatically detecting when system the
 On the browser
 ```html
 <!-- Search theme-switch-listener on jsdelivr and replace src string with the one provided by jsdelivr  -->
-<script src=""></script>
+<script src="https://cdn.jsdelivr.net/npm/theme-switch-listener@0.0.3/dist/client.min.js"></script>
+
+const switcher = Themer.ThemeSwitcher()
 ```
 Or on Vue, React or Angular
 ```js
